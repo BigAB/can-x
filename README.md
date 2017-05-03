@@ -1,6 +1,6 @@
 # can-x
 
-[![Build Status](https://travis-ci.org/canjs/can-x.png?branch=master)](https://travis-ci.org/canjs/can-x)
+[![Build Status](https://travis-ci.org/BigAB/can-x.svg?branch=master)](https://travis-ci.org/BigAB/can-x)
 
 Create auto rendering React components with observable stores
 
