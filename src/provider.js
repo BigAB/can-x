@@ -17,10 +17,10 @@ export default class Provider extends Component {
 		canxStores: PropTypes.canObservable.isRequired
 	};
 
-	render() {
-		return React.Children.only(this.props.children);
-	}
-
+	static propTypes = {
+		children: PropTypes.node
+	};
+	
 	getChildContext() {
 		const stores = {};
 		// inherit stores
@@ -36,5 +36,9 @@ export default class Provider extends Component {
 			}
 		}
 		return {canxStores: stores};
+	}
+
+	render() {
+		return React.Children.only(this.props.children);
 	}
 }
