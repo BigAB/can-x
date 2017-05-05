@@ -43,6 +43,12 @@
   ],
   "steal": {
     "main": "can-x",
+    "babelOptions": {
+      "plugins": [
+        "transform-decorators-legacy",
+        "transform-class-properties"
+      ]
+    },
     "configDependencies": [
       "live-reload"
     ],
@@ -62,22 +68,27 @@
   },
   "dependencies": {
     "can-component": "^3.0.7",
+    "can-compute": "^3.0.10",
     "can-define": "^1.0.17",
     "can-stache": "^3.0.20",
     "can-view-autorender": "^3.0.4",
     "cssify": "^0.6.0",
+    "hoist-non-react-statics": "^1.2.0",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
     "steal-less": "^1.2.0",
     "steal-stache": "^3.0.5"
   },
   "devDependencies": {
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "done-serve": "^1.0.0",
+    "donejs-cli": "^1.0.0",
+    "generator-donejs": "^1.0.0",
     "jshint": "^2.9.1",
     "steal": "^1.3.1",
     "steal-qunit": "^1.0.1",
     "steal-tools": "^1.2.0",
-    "testee": "^0.3.0",
-    "generator-donejs": "^1.0.0",
-    "donejs-cli": "^1.0.0",
-    "done-serve": "^1.0.0"
+    "testee": "^0.3.0"
   },
   "license": "MIT"
 }
